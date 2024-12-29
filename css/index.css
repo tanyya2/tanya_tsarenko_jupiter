@@ -22,6 +22,11 @@ h2 {
   font-size: 30px;
   margin: 10px 0px;
 }
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+}
 
 .ancor-links-and-location {
   position: sticky;
@@ -31,16 +36,8 @@ h2 {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(22, 22, 24, 0.8);
-  padding: 10px 20px;
-  font-size: 20px;
-}
-
-.top-right {
-  margin-right: 0;
-}
-
-.top-left {
-  gap: 10px;
+  padding: 5px 10px;
+  font-size: 18px;
 }
 
 .top-left a {
@@ -69,28 +66,28 @@ h2 {
   padding: 0 30px 130px 30px;
 }
 
-.dates {
-  float: right;
-  font-size: 15px;
-}
-
-.education {
+.education-and-experience {
   background-color: #1e1e20;
   border: 1px solid #2a2a2c;
   border-radius: 8px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  gap: 35px;
+  /* gap: 30px; */
   margin: 80px 30px 180px 30px;
   padding: 30px;
 }
 
+.school-and-experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .university-name {
   font-size: 25px;
   margin: 15px 0px 0 0px;
 }
 
 .speciality {
-  margin: 0 0 30px 80px;
+  margin: 0 0 30px 10px;
   line-height: 1.5;
 }
 
@@ -107,15 +104,6 @@ h2 {
   text-align: right;
   margin: 7px 20px 10px 0;
   font-style: italic;
-}
-
-.experience {
-  background-color: #1e1e20;
-  border: 1px solid #2a2a2c;
-  border-radius: 8px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  margin: 80px 30px 40px 30px;
-  padding: 30px;
 }
 
 .position-at-work {
@@ -150,7 +138,7 @@ h2 {
 }
 
 i:hover {
-  color: #e6e6e6;
+  color: #302f2f;
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
