@@ -1,32 +1,33 @@
+html {
+  font-size: 62.5%;
+}
 body {
   background-color: #161618;
   font-family: "Young Serif", serif;
   color: #ffffff;
   line-height: 2;
-
-  /* box-shadow: 0 4px rgba(0, 0, 0, 0.2); */
 }
-
 h1 {
   text-align: center;
-  padding: 130px 20px 0;
-  font-size: 140px;
-  margin: 20px;
+  padding: 13rem 2rem 0;
+  font-size: 14rem;
+  margin: 2rem;
   font-family: "Bodoni Moda", serif;
   font-weight: 600;
   font-style: normal;
   line-height: 1.2;
 }
-
 h2 {
-  font-size: 30px;
-  margin: 10px 0px;
+  font-size: 3rem;
+  margin: 1rem 0px;
 }
 ul {
   list-style-type: none;
-  margin: 10px;
+  margin: 1rem;
   padding: 0;
 }
+
+/* Header Section */
 
 .ancor-links-and-location {
   position: sticky;
@@ -36,162 +37,218 @@ ul {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(22, 22, 24, 0.8);
-  padding: 5px 10px;
-  font-size: 18px;
+  padding: 0.5rem 1rem;
+  font-size: 1.8rem;
 }
-
 .top-left a {
-  margin: 10px;
-  padding: 8px 12px;
-  border-radius: 5px;
+  margin: 1rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
   text-decoration: none;
   color: white;
   font-weight: 500;
 }
-
 .top-left a:hover {
   color: #e6e6e6;
   background-color: #2a2a2c;
 }
-
 .surname {
   display: block;
-  font-size: 160px;
+  font-size: 16rem;
 }
-
 .about {
   text-align: center;
-  font-size: 20px;
+  font-size: 2rem;
   margin: 0;
-  padding: 0 30px 130px 30px;
+  padding: 0 3rem 13rem 3rem;
 }
-
 .education-and-experience {
   background-color: #1e1e20;
   border: 1px solid #2a2a2c;
-  border-radius: 8px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  /* gap: 30px; */
-  margin: 80px 30px 180px 30px;
-  padding: 30px;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.2);
+  margin: 8rem 3rem 18rem 3rem;
+  padding: 3rem;
 }
-
 .school-and-experience {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .university-name {
-  font-size: 25px;
-  margin: 15px 0px 0 0px;
+  font-size: 2.5rem;
+  margin: 1.5rem 0 0 0px;
 }
-
+.dates {
+  font-size: 1.7rem;
+}
 .speciality {
-  margin: 0 0 30px 10px;
+  font-size: 1.8rem;
+  margin: 0 0 3rem 1rem;
   line-height: 1.5;
 }
-
+.code-the-dream-ul {
+  font-size: 1.7rem;
+}
 .extra-activities {
   text-align: right;
-  font-size: 20px;
-  margin: 100px 20px 0 0;
+  font-size: 1.7rem;
+  margin: 10rem 2rem 0 0;
   width: 100%;
   font-style: italic;
 }
-
 .extra-activities-list {
+  font-size: 1.7rem;
   list-style-position: inside;
   text-align: right;
-  margin: 7px 20px 10px 0;
+  margin: 0.7rem 0 1rem 0;
   font-style: italic;
 }
-
 .position-at-work {
-  font-size: 27px;
-  margin: 10px 0 0 40px;
+  font-size: 2.7rem;
+  margin: 1rem 0 0 4rem;
 }
-
 .company-name {
-  font-size: 18px;
-  margin: 0 0 20px 80px;
+  font-size: 1.8rem;
+  margin: 0 0 2rem 8rem;
 }
-
 .responsibilities-list {
   list-style-type: square;
   list-style-position: outside;
-  padding: 10px;
-  margin: 15px 0 20px 100px;
-  font-size: 20px;
-}
-
-.connect {
-  text-align: center;
-  margin: 20px 0 10px 0;
+  padding: 1rem;
+  margin: 1.5rem 0 2rem 10rem;
+  font-size: 2rem;
 }
 .connect-icons {
-  font-size: 40px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
 }
 .connect-icons i {
   color: white;
-  margin: 0 10px;
+  margin: 0 1rem;
 }
-
 i:hover {
   color: #302f2f;
 }
 
-@media (min-width: 300px) and (max-width: 767px) {
+/* Mobile and tablet */
+
+@media (min-width: 577px) and (max-width: 768px) {
   body {
-    font-size: 10px;
+    font-size: 1rem;
   }
   h1 {
-    font-size: 70px;
+    font-size: 7rem;
   }
 
   h2 {
-    font-size: 25px;
-    margin: 10px 0px;
+    font-size: 2rem;
+    margin: 1rem 0;
   }
   .surname {
-    font-size: 90px;
+    font-size: 9rem;
   }
   .education {
-    margin: 0px;
+    margin: 0;
   }
   .ancor-links-and-location {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
   .speciality {
     text-align: left;
     margin: 0;
-    font-size: 15px;
+    font-size: 1.3rem;
+  }
+  .code-the-dream-ul {
+    font-size: 1.3rem;
+    margin: 0;
   }
   .about {
-    font-size: 13px;
+    font-size: 1.5rem;
   }
   .dates {
-    font-size: 13px;
+    font-size: 0.9rem;
   }
   .university-name {
-    font-size: 20px;
+    font-size: 2rem;
+    padding-bottom: 1rem;
   }
   .extra-activities {
-    font-size: 15px;
+    font-size: 1.5rem;
+    margin-top: 3rem;
   }
   .extra-activities-list {
-    font-size: 15px;
+    font-size: 1.3rem;
   }
   .position-at-work {
-    font-size: 18px;
+    font-size: 2rem;
   }
   .company-name {
-    font-size: 15px;
+    font-size: 1.3rem;
   }
   .responsibilities-list {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
   .connect-icons {
-    font-size: 25px;
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile style */
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  .surname {
+    font-size: 7rem;
+  }
+  .ancor-links-and-location {
+    font-size: 1.2rem;
+  }
+  .speciality {
+    /* text-align: left; */
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  .code-the-dream-ul {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  .about {
+    font-size: 1.3rem;
+  }
+  .dates {
+    font-size: 0.9rem;
+  }
+  .university-name {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+  }
+  .extra-activities {
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
+  }
+  .extra-activities-list {
+    font-size: 1.3rem;
+  }
+  .position-at-work {
+    font-size: 1.8rem;
+  }
+  .company-name {
+    font-size: 1.3rem;
+  }
+  .responsibilities-list {
+    font-size: 1.5rem;
+  }
+  .connect-icons {
+    font-size: 2rem;
   }
 }
