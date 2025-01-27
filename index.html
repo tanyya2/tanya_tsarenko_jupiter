@@ -124,6 +124,40 @@
             </div>
         </section>
     </div>
+    <div class="message-container">
+        <section class="leave-message">
+            <!-- Leave a message section -->
+            <h2>Leave a Message</h2>
+            <form name="leave_message" id="leaveMessage">
+                <!-- Name -->
+            <div class="group-form">
+                <label for="usersName" class="label-form">Your Name:</label>
+                <input type="text" name="usersName" required placeholder="John Smith" id="name" class="control-form">
+                <br>
+            </div>
+                <!-- email -->
+            <div class="group-form">
+                <label for="usersEmail" class="label-form">Your Email:</label>
+                <input type="email" name="usersEmail" required placeholder="john.smith@gmail.com" id="email" class="control-form">
+                <br>
+            </div>
+                <!-- Message -->
+            <div class="group-form">
+                <label for="usersMessage" class="label-form">Your message:</label>
+                <textarea name="usersMessage" required placeholder="type your message here..." id="message" class="control-form"></textarea>
+                <br>
+            </div>
+                <!-- Submit button -->
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+        <section id="messages">
+            <h2>Messages</h2>
+            <ul>
+
+            </ul>
+        </section>
+    </div>
     <script src="js/index.js"></script>
     </body>
 </html>
