@@ -46,3 +46,36 @@ messageForm.addEventListener('submit', function(event) {
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
 })
+
+const myUserName = "tanyya2"
+fetch(`https://api.github.com/users/${myUserName}/repos`)
+.then(response => {
+    if (!response.ok) {
+      throw new Error('Request failed');
+    }
+    return response.json(); 
+  })
+  // get the data
+.then(data => {
+    console.log('json data = ', data); // Do something with the data
+    const repositories = [...data];
+    console.log('repositories array = ', repositories);
+    
+    // find and select the project section
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+    for(let i = 0; i< repositories.length; i++) {
+        let project = document.createElement("li");
+        // Make the project name a clickable link
+        let link = document.createElement("a");
+        link.href = repositories[i].html_url;
+        link.innerText = repositories[i].name; // Show the repo name 
+        link.target = "_blank";
+        project.appendChild(link);
+        projectList.appendChild(project);
+    }
+})
+
+  .catch(error => {
+    console.error('An error occurred:', error);
+  });

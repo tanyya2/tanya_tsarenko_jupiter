@@ -159,6 +159,33 @@ i:hover {
   padding: 3rem;
   overflow: hidden;
 }
+.projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 2rem 0;
+}
+.projects ul li {
+  background-color: #2a2a2c;
+  border: 1px solid #3a3a3c;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+.projects ul li:hover {
+  transform: scale(1.05);
+  background-color: #3a3a3c;
+}
+.projects ul li a {
+  text-decoration: none;
+  color: #f99c11;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
 /* style leave a message and a message sections */
 .message-container {
   display: flex;
@@ -298,6 +325,10 @@ footer p {
   .responsibilities-list {
     font-size: 1.6rem;
   }
+  .projects ul {
+    flex-direction: column;
+    align-items: center;
+  }
   .connect-icons {
     font-size: 2.5rem;
   }
@@ -358,6 +389,10 @@ footer p {
   }
   .responsibilities-list {
     font-size: 1.5rem;
+  }
+  .projects ul {
+    flex-direction: column;
+    align-items: center;
   }
   .connect-icons {
     font-size: 2rem;
