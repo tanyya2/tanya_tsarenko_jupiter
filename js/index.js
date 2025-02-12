@@ -12,7 +12,7 @@ body.appendChild(footer);
 
 const skills = ["JavaScript", "HTML", "CSS", "Git", "GitHub"]
 
-const skillsSection = document.getElementById('skills')
+const skillsSection = document.getElementById('skills');
 
 const skillsList = skillsSection.querySelector('ul');
 for(let i = 0; i < skills.length; i++) {
@@ -20,7 +20,27 @@ for(let i = 0; i < skills.length; i++) {
     skill.innerHTML = skills[i];
     skillsList.appendChild(skill)
 }
-
+document.addEventListener("DOMContentLoaded", function () {
+    const navbarHeight = document.querySelector(".ancor-links-and-location").offsetHeight; // Get the navbar height
+    const links = document.querySelectorAll(".top-left a"); // Select all anchor links
+  
+    links.forEach(link => {
+      link.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default jump behavior
+  
+        const targetId = this.getAttribute("href").substring(1); 
+        const targetElement = document.getElementById(targetId); 
+  
+        if (targetElement) {
+          const targetPosition = targetElement.offsetTop - navbarHeight - 20; 
+          window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth" 
+          });
+        }
+      });
+    });
+  });
 const messageForm = document.forms['leave_message'];
 messageForm.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -49,11 +69,11 @@ messageForm.addEventListener('submit', function(event) {
 
 const myUserName = "tanyya2"
 fetch(`https://api.github.com/users/${myUserName}/repos`)
-.then(response => {
-    if (!response.ok) {
-      throw new Error('Request failed');
-    }
-    return response.json(); 
+    .then(response => {
+        if (!response.ok) {
+        throw new Error('Request failed');
+        }
+        return response.json(); 
   })
   // get the data
 .then(data => {
